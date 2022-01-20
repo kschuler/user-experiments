@@ -1,0 +1,312 @@
+experiment:
+  version: 20.1
+  last_updated: 2021-12-5
+  condition: 11  #6 out of 12, uniform distribution (exp-v5)
+  completion_url: ''
+
+preload:
+  images:
+    - "static/images/good.png"
+    - "static/images/bad.png"
+    - "static/images/intermediate.png"
+    - "static/images/pic1.png"
+    - "static/images/pic2.png"
+    - "static/images/pic3.png"
+
+  sounds:
+    - "static/sounds/silence.wav"
+    - "static/sounds/sane_ka_bila.mp3"
+    - "static/sounds/sane_ka_kewa.mp3"
+    - "static/sounds/sane_ka_kosi.mp3"
+    - "static/sounds/sane_ka_nogi.mp3"
+    - "static/sounds/sane_ka_sito.mp3"
+    - "static/sounds/tesa_ka_bila.mp3"
+    - "static/sounds/tesa_ka_kewa.mp3"
+    - "static/sounds/tesa_ka_kosi.mp3"
+    - "static/sounds/tesa_ka_mito.mp3"
+    - "static/sounds/tesa_ka_nogi.mp3"
+    - "static/sounds/tesa_ka_sito.mp3"
+    - "static/sounds/waso_ka_bila.mp3"
+    - "static/sounds/waso_ka_kewa.mp3"
+    - "static/sounds/waso_ka_kosi.mp3"
+    - "static/sounds/waso_ka_mito.mp3"
+    - "static/sounds/waso_ka_nogi.mp3"
+    - "static/sounds/waso_ka_sito.mp3"
+    - "static/sounds/nogi_ka_mito.mp3"
+    - "static/sounds/nogi_ka_kewa.mp3"
+    - "static/sounds/nogi_ka_kosi.mp3"
+    - "static/sounds/nogi_ka_bila.mp3"
+    - "static/sounds/sito_ka_nogi.mp3"
+    - "static/sounds/sito_ka_kosi.mp3"
+    - "static/sounds/sito_ka_bila.mp3"
+    - "static/sounds/sito_ka_mito.mp3"
+    - "static/sounds/kosi_ka_sito.mp3"
+    - "static/sounds/kosi_ka_nogi.mp3"
+    - "static/sounds/kosi_ka_mito.mp3"
+    - "static/sounds/mito_ka_nogi.mp3"
+    - "static/sounds/mito_ka_kosi.mp3"
+    - "static/sounds/mito_ka_bila.mp3"
+    - "static/sounds/mito_ka_sito.mp3"
+    - "static/sounds/kewa_ka_kosi.mp3"
+    - "static/sounds/kewa_ka_nogi.mp3"
+    - "static/sounds/kewa_ka_bila.mp3"
+    - "static/sounds/kewa_ka_mito.mp3"
+    - "static/sounds/bila_ka_kewa.mp3"
+    - "static/sounds/bila_ka_nogi.mp3"
+    - "static/sounds/bila_ka_sito.mp3"
+    - "static/sounds/bila_ka_mito.mp3"
+    - "static/sounds/seta_ka_nogi.mp3"
+    - "static/sounds/seta_ka_sito.mp3"
+    - "static/sounds/seta_ka_kewa.mp3"
+    - "static/sounds/seta_ka_kosi.mp3"
+    - "static/sounds/sasa_ka_kosi.mp3"
+    - "static/sounds/sasa_ka_bila.mp3"
+    - "static/sounds/sasa_ka_nogi.mp3"
+    - "static/sounds/sasa_ka_sito.mp3"
+    - "static/sounds/tana_ka_sito.mp3"
+    - "static/sounds/tana_ka_kosi.mp3"
+    - "static/sounds/tana_ka_mito.mp3"
+    - "static/sounds/tana_ka_kewa.mp3"
+    - "static/sounds/bird.mp3"
+    - "static/sounds/sea.mp3"
+    - "static/sounds/nogi_ka_sane.mp3"
+    - "static/sounds/sito_ka_tesa.mp3"
+    - "static/sounds/mito_ka_waso.mp3"
+    - "static/sounds/nogi_ka_seta.mp3"
+    - "static/sounds/sito_ka_sasa.mp3"
+    - "static/sounds/mito_ka_tana.mp3"
+    - "static/sounds/ka_mito_nogi.mp3"
+    - "static/sounds/ka_mito_sito.mp3"
+    - "static/sounds/ka_kewa_kosi.mp3"
+    - "static/sounds/ka_nogi_mito.mp3"
+    - "static/sounds/ka_nogi_kewa.mp3"
+    - "static/sounds/ka_sito_bila.mp3"
+    - "static/sounds/nogi_ka_sane_ka_seta.mp3"
+    - "static/sounds/sito_ka_tesa_ka_sasa.mp3"
+    - "static/sounds/kewa_ka_waso_ka_tana.mp3"
+    - "static/sounds/nogi_ka_seta_ka_sane.mp3"
+    - "static/sounds/sito_ka_sasa_ka_tesa.mp3"
+    - "static/sounds/kewa_ka_tana_ka_waso.mp3"
+    - "static/sounds/bila_ka_mito_ka_nogi.mp3"
+    - "static/sounds/kewa_ka_mito_ka_sito.mp3"
+    - "static/sounds/bila_ka_kewa_ka_kosi.mp3"
+    - "static/sounds/kewa_ka_nogi_ka_mito.mp3"
+    - "static/sounds/mito_ka_nogi_ka_kewa.mp3"
+    - "static/sounds/mito_ka_sito_ka_bila.mp3"
+    - "static/sounds/ka_bila_mito_nogi_ka.mp3"
+    - "static/sounds/ka_kewa_mito_sito_ka.mp3"
+    - "static/sounds/ka_bila_kewa_kosi_ka.mp3"
+    - "static/sounds/ka_kewa_nogi_mito_ka.mp3"
+    - "static/sounds/ka_mito_nogi_kewa_ka.mp3"
+    - "static/sounds/ka_mito_sito_bila_ka.mp3"
+
+instructions:
+  part1:
+    - >
+      <p>In this study, you'll hear sentences from a new language that you've never heard before.</p>
+    - >
+      <p>Your job is to pay attention to the sentences, because you will be tested on your knowledge of the language later.</p>
+    - >
+      <p>To help us make sure you are paying attention, there will be random bird chirping sounds among the sentences, and you will be asked how many bird chirping sounds you have heard.</p>
+    - >
+      <p>Please make sure your volume is on.</p>
+    - >
+      <p>Ready to start?</p>
+
+  part2:
+    - >
+      <p>Great! Now you will hear more sentences from the new language.</p>
+    - >
+      <p>Again, your job is to pay attention to the sentences.</p>
+    - >
+      <p>And there will be random sea sounds among the sentences, and later you will be asked how many sea sounds you have heard.</p>
+    - >
+      <p>Ready?</p>
+
+
+  part3:
+    - >
+      <p>Great! You are ready for the final level.</p>
+    - >
+      <p>In this part, you will hear sentences, and your job is to decide if those sentences came from the language you've just heard.</p>
+    - >
+      <p>There will be a rating scale. If you are sure the sentence is definitely from the language, check <img src=static/images/good.png width=30></img>.</p>
+    - >
+      <p>If you are sure the sentence is definitely not from the language, check <img src=static/images/bad.png width=30></img>.</p>
+    - >
+      <p>If you are not sure whether the sentence is from the language, choose a value in between: 2 means the sentence may not have come from the language; 3 means the sentence may or may not have come from the language; 4 means the sentence may have come from the language.</p>
+    - >
+      <p>Please rate the sentences based on your gut reaction to each sentence and whether you think a native speaker of the language would have said that particular sentence when following the rules of the language’s grammar.
+    - >
+      <p>Ready?</p>
+
+breaks:
+  total_trials: 131
+  total_breaks: 3
+  break_trials: [47, 95, 131]
+
+exposure1:
+  random: true
+  reps: 1
+  trials:
+    - {position1: w1, position2: w9, sound: sane_ka_bila}
+    - {position1: w1, position2: w8, sound: sane_ka_kewa}
+    - {position1: w1, position2: w6, sound: sane_ka_kosi}
+    - {position1: w1, position2: w4, sound: sane_ka_nogi}
+    - {position1: w1, position2: w5, sound: sane_ka_sito}
+    - {position1: w2, position2: w9, sound: tesa_ka_bila}
+    - {position1: w2, position2: w8, sound: tesa_ka_kewa}
+    - {position1: w2, position2: w6, sound: tesa_ka_kosi}
+    - {position1: w2, position2: w7, sound: tesa_ka_mito}
+    - {position1: w2, position2: w4, sound: tesa_ka_nogi}
+    - {position1: w2, position2: w5, sound: tesa_ka_sito}
+    - {position1: w3, position2: w9, sound: waso_ka_bila}
+    - {position1: w3, position2: w8, sound: waso_ka_kewa}
+    - {position1: w3, position2: w6, sound: waso_ka_kosi}
+    - {position1: w3, position2: w7, sound: waso_ka_mito}
+    - {position1: w3, position2: w4, sound: waso_ka_nogi}
+    - {position1: w3, position2: w5, sound: waso_ka_sito}
+    - {position1: w4, position2: w7, sound: nogi_ka_mito}
+    - {position1: w4, position2: w8, sound: nogi_ka_kewa}
+    - {position1: w4, position2: w6, sound: nogi_ka_kosi}
+    - {position1: w4, position2: w9, sound: nogi_ka_bila}
+    - {position1: w5, position2: w4, sound: sito_ka_nogi}
+    - {position1: w5, position2: w6, sound: sito_ka_kosi}
+    - {position1: w5, position2: w9, sound: sito_ka_bila}
+    - {position1: w5, position2: w7, sound: sito_ka_mito}
+    - {position1: w6, position2: w5, sound: kosi_ka_sito}
+    - {position1: w6, position2: w4, sound: kosi_ka_nogi}
+    - {position1: w6, position2: w7, sound: kosi_ka_mito}
+    - {position1: w7, position2: w4, sound: mito_ka_nogi}
+    - {position1: w7, position2: w6, sound: mito_ka_kosi}
+    - {position1: w7, position2: w9, sound: mito_ka_bila}
+    - {position1: w7, position2: w5, sound: mito_ka_sito}
+    - {position1: w8, position2: w6, sound: kewa_ka_kosi}
+    - {position1: w8, position2: w4, sound: kewa_ka_nogi}
+    - {position1: w8, position2: w9, sound: kewa_ka_bila}
+    - {position1: w8, position2: w7, sound: kewa_ka_mito}
+    - {position1: w9, position2: w8, sound: bila_ka_kewa}
+    - {position1: w9, position2: w4, sound: bila_ka_nogi}
+    - {position1: w9, position2: w5, sound: bila_ka_sito}
+    - {position1: w9, position2: w7, sound: bila_ka_mito}
+    - {position1: w10, position2: w4, sound: seta_ka_nogi}
+    - {position1: w10, position2: w5, sound: seta_ka_sito}
+    - {position1: w10, position2: w8, sound: seta_ka_kewa}
+    - {position1: w10, position2: w6, sound: seta_ka_kosi}
+    - {position1: w11, position2: w6, sound: sasa_ka_kosi}
+    - {position1: w11, position2: w9, sound: sasa_ka_bila}
+    - {position1: w11, position2: w4, sound: sasa_ka_nogi}
+    - {position1: w11, position2: w5, sound: sasa_ka_sito}
+    - {position1: w12, position2: w5, sound: tana_ka_sito}
+    - {position1: w12, position2: w6, sound: tana_ka_kosi}
+    - {position1: w12, position2: w7, sound: tana_ka_mito}
+    - {position1: w12, position2: w8, sound: tana_ka_kewa}
+    - {position1: null, position2: null, sound: bird}
+    - {position1: null, position2: null, sound: bird}
+
+exposure2:
+  random: true
+  reps: 1
+  trials:
+    - {position1: w1, position2: w9, sound: sane_ka_bila}
+    - {position1: w1, position2: w8, sound: sane_ka_kewa}
+    - {position1: w1, position2: w6, sound: sane_ka_kosi}
+    - {position1: w1, position2: w4, sound: sane_ka_nogi}
+    - {position1: w1, position2: w5, sound: sane_ka_sito}
+    - {position1: w2, position2: w9, sound: tesa_ka_bila}
+    - {position1: w2, position2: w8, sound: tesa_ka_kewa}
+    - {position1: w2, position2: w6, sound: tesa_ka_kosi}
+    - {position1: w2, position2: w7, sound: tesa_ka_mito}
+    - {position1: w2, position2: w4, sound: tesa_ka_nogi}
+    - {position1: w2, position2: w5, sound: tesa_ka_sito}
+    - {position1: w3, position2: w9, sound: waso_ka_bila}
+    - {position1: w3, position2: w8, sound: waso_ka_kewa}
+    - {position1: w3, position2: w6, sound: waso_ka_kosi}
+    - {position1: w3, position2: w7, sound: waso_ka_mito}
+    - {position1: w3, position2: w4, sound: waso_ka_nogi}
+    - {position1: w3, position2: w5, sound: waso_ka_sito}
+    - {position1: w4, position2: w7, sound: nogi_ka_mito}
+    - {position1: w4, position2: w8, sound: nogi_ka_kewa}
+    - {position1: w4, position2: w6, sound: nogi_ka_kosi}
+    - {position1: w4, position2: w9, sound: nogi_ka_bila}
+    - {position1: w5, position2: w4, sound: sito_ka_nogi}
+    - {position1: w5, position2: w6, sound: sito_ka_kosi}
+    - {position1: w5, position2: w9, sound: sito_ka_bila}
+    - {position1: w5, position2: w7, sound: sito_ka_mito}
+    - {position1: w6, position2: w5, sound: kosi_ka_sito}
+    - {position1: w6, position2: w4, sound: kosi_ka_nogi}
+    - {position1: w6, position2: w7, sound: kosi_ka_mito}
+    - {position1: w7, position2: w4, sound: mito_ka_nogi}
+    - {position1: w7, position2: w6, sound: mito_ka_kosi}
+    - {position1: w7, position2: w9, sound: mito_ka_bila}
+    - {position1: w7, position2: w5, sound: mito_ka_sito}
+    - {position1: w8, position2: w6, sound: kewa_ka_kosi}
+    - {position1: w8, position2: w4, sound: kewa_ka_nogi}
+    - {position1: w8, position2: w9, sound: kewa_ka_bila}
+    - {position1: w8, position2: w7, sound: kewa_ka_mito}
+    - {position1: w9, position2: w8, sound: bila_ka_kewa}
+    - {position1: w9, position2: w4, sound: bila_ka_nogi}
+    - {position1: w9, position2: w5, sound: bila_ka_sito}
+    - {position1: w9, position2: w7, sound: bila_ka_mito}
+    - {position1: w10, position2: w4, sound: seta_ka_nogi}
+    - {position1: w10, position2: w5, sound: seta_ka_sito}
+    - {position1: w10, position2: w8, sound: seta_ka_kewa}
+    - {position1: w10, position2: w6, sound: seta_ka_kosi}
+    - {position1: w11, position2: w6, sound: sasa_ka_kosi}
+    - {position1: w11, position2: w9, sound: sasa_ka_bila}
+    - {position1: w11, position2: w4, sound: sasa_ka_nogi}
+    - {position1: w11, position2: w5, sound: sasa_ka_sito}
+    - {position1: w12, position2: w5, sound: tana_ka_sito}
+    - {position1: w12, position2: w6, sound: tana_ka_kosi}
+    - {position1: w12, position2: w7, sound: tana_ka_mito}
+    - {position1: w12, position2: w8, sound: tana_ka_kewa}
+    - {position1: null, position2: null, sound: sea}
+    - {position1: null, position2: null, sound: sea}
+    - {position1: null, position2: null, sound: sea}
+
+test1:
+  random: true
+  reps: 1
+  trials:
+    - {position1: w4, position2: w1, level: 1, Type: unattested, sound: nogi_ka_sane}
+    - {position1: w5, position2: w2, level: 1, Type: unattested, sound: sito_ka_tesa}
+    - {position1: w7, position2: w3, level: 1, Type: unattested, sound: mito_ka_waso}
+    - {position1: w4, position2: w10, level: 1, Type: unattested, sound: nogi_ka_seta}
+    - {position1: w5, position2: w11, level: 1, Type: unattested, sound: sito_ka_sasa}
+    - {position1: w7, position2: w12, level: 1, Type: unattested, sound: mito_ka_tana}
+    - {position1: w7, position2: w4, level: 1, Type: attested, sound: mito_ka_nogi}
+    - {position1: w7, position2: w5, level: 1, Type: attested, sound: mito_ka_sito}
+    - {position1: w8, position2: w6, level: 1, Type: attested, sound: kewa_ka_kosi}
+    - {position1: w4, position2: w7, level: 1, Type: attested, sound: nogi_ka_mito}
+    - {position1: w4, position2: w8, level: 1, Type: attested, sound: nogi_ka_kewa}
+    - {position1: w5, position2: w9, level: 1, Type: attested, sound: sito_ka_bila}
+    - {position1: w7, position2: w4, level: 1, Type: ungrammatical, sound: ka_mito_nogi}
+    - {position1: w7, position2: w5, level: 1, Type: ungrammatical, sound: ka_mito_sito}
+    - {position1: w8, position2: w6, level: 1, Type: ungrammatical, sound: ka_kewa_kosi}
+    - {position1: w4, position2: w7, level: 1, Type: ungrammatical, sound: ka_nogi_mito}
+    - {position1: w4, position2: w8, level: 1, Type: ungrammatical, sound: ka_nogi_kewa}
+    - {position1: w5, position2: w9, level: 1, Type: ungrammatical, sound: ka_sito_bila}
+
+
+test2:
+  random: true
+  reps: 1
+  trials:
+    - {position1: w4, position2: w1, position3: w10, level: 2, Type: unattested, sound: nogi_ka_sane_ka_seta}
+    - {position1: w5, position2: w2, position3: w11, level: 2, Type: unattested, sound: sito_ka_tesa_ka_sasa}
+    - {position1: w8, position2: w3, position3: w12, level: 2, Type: unattested, sound: kewa_ka_waso_ka_tana}
+    - {position1: w4, position2: w10, position3: w1, level: 2, Type: unattested, sound: nogi_ka_seta_ka_sane}
+    - {position1: w5, position2: w11, position3: w2, level: 2, Type: unattested, sound: sito_ka_sasa_ka_tesa}
+    - {position1: w8, position2: w12, position3: w3, level: 2, Type: unattested, sound: kewa_ka_tana_ka_waso}
+    - {position1: w9, position2: w7, position3: w4, level: 2, Type: attested, sound: bila_ka_mito_ka_nogi}
+    - {position1: w8, position2: w7, position3: w5, level: 2, Type: attested, sound: kewa_ka_mito_ka_sito}
+    - {position1: w9, position2: w8, position3: w6, level: 2, Type: attested, sound: bila_ka_kewa_ka_kosi}
+    - {position1: w8, position2: w4, position3: w7, level: 2, Type: attested, sound: kewa_ka_nogi_ka_mito}
+    - {position1: w7, position2: w4, position3: w8, level: 2, Type: attested, sound: mito_ka_nogi_ka_kewa}
+    - {position1: w7, position2: w5, position3: w9, level: 2, Type: attested, sound: mito_ka_sito_ka_bila}
+    - {position1: w9, position2: w7, position3: w4, level: 2, Type: ungrammatical, sound: ka_bila_mito_nogi_ka}
+    - {position1: w8, position2: w7, position3: w5, level: 2, Type: ungrammatical, sound: ka_kewa_mito_sito_ka}
+    - {position1: w9, position2: w8, position3: w6, level: 2, Type: ungrammatical, sound: ka_bila_kewa_kosi_ka}
+    - {position1: w8, position2: w4, position3: w7, level: 2, Type: ungrammatical, sound: ka_kewa_nogi_mito_ka}
+    - {position1: w7, position2: w4, position3: w8, level: 2, Type: ungrammatical, sound: ka_mito_nogi_kewa_ka}
+    - {position1: w7, position2: w5, position3: w9, level: 2, Type: ungrammatical, sound: ka_mito_sito_bila_ka}
